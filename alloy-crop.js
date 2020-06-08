@@ -132,7 +132,7 @@
 
             this.alloyFingerList.push(new AlloyFinger(this.cancel_btn, {
                 touchStart:function(){
-                    self.cancel_btn.style.backgroundColor = '#ffffff';
+                    self.cancel_btn.style.backgroundColor = '#000';
                     self.cancel_btn.style.color = '#3B4152';
                 },
                 tap: this._cancel.bind(this)
@@ -140,7 +140,7 @@
 
             this.alloyFingerList.push(new AlloyFinger(this.ok_btn, {
                 touchStart:function(){
-                    self.ok_btn.style.backgroundColor = '#2bcafd';
+                    self.ok_btn.style.backgroundColor = '#000';
                     self.ok_btn.style.color = '#ffffff';
                 },
                 tap: this._ok.bind(this)
@@ -148,8 +148,8 @@
 
             this.alloyFingerList.push(new AlloyFinger(document, {
                 touchEnd: function () {
-                    self.cancel_btn.style.backgroundColor = '#ffffff';
-                    self.ok_btn.style.backgroundColor = '#2bcafd';
+                    self.cancel_btn.style.backgroundColor = '#000';
+                    self.ok_btn.style.backgroundColor = '#000';
                 }
             }));
 
@@ -244,7 +244,7 @@
                 bottom: "20px",
                 borderRadius: "2px",
                 color: "#ffffff",
-                backgroundColor: "#2bcafd"
+                backgroundColor: "#000"
 
             });
 
@@ -258,7 +258,7 @@
                 bottom: "20px",
                 borderRadius: "2px",
                 color: "#3B4152",
-                backgroundColor: "#ffffff"
+                backgroundColor: "#000"
 
             });
         },
